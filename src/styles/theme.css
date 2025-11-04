@@ -1,0 +1,78 @@
+/* =========================================================
+   F1 THEME TOKENS
+   Shared variables for Light + Dark UI modes
+   ========================================================= */
+
+/* Light Theme (Default) */
+:root {
+  /* Brand / Identity */
+  --color-f1-red: #FF1E00;
+  --color-f1-black: #15151E;
+  --color-f1-white: #FFFFFF;
+
+  /* UI Base */
+  --color-bg: #F8F9FA;
+  --color-text: #15151E;
+  --color-card: #FFFFFF;
+  --color-border: #D9D9D9;
+
+  /* Component Surface Elevation (optional, helpful later) */
+  --color-surface-low: var(--color-card);
+  --color-surface-mid: #ECECEC;
+  --color-surface-high: #DDDDDD;
+
+  /* Interactive / Accent */
+  --color-accent: var(--color-f1-red);
+
+  /* Sector Timing Colors */
+  --sector-purple: #A020F0; /* Fastest overall */
+  --sector-green: #00D400;  /* Personal best */
+  --sector-yellow: #FFD300; /* Not personal best */
+
+  /* Team Colors */
+  --team-mercedes: #00D7B6;
+  --team-redbull: #4781D7;
+  --team-ferrari: #ED1131;
+  --team-mclaren: #F47600;
+  --team-alpine: #00A1E8;
+  --team-racing-bulls: #6C98FF;
+  --team-aston-martin: #229971;
+  --team-williams: #1868DB;
+  --team-kick-sauber: #01C00E;
+  --team-haas: #9C9FA2;
+
+  /* Typography (we can adjust later) */
+  --font-family: 'Inter', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Spacing scale (also helpful later) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Border Radius Scale */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
+/* =========================================================
+   DARK THEME OVERRIDES
+   Apply by toggling: document.body.classList.add('theme-dark')
+   ========================================================= */
+
+.theme-dark {
+  --color-bg: #15151E;
+  --color-text: #F8F9FA;
+  --color-card: #1E1E27;
+  --color-border: #3A3A45;
+
+  --color-surface-low: var(--color-card);
+  --color-surface-mid: #2B2B35;
+  --color-surface-high: #3D3D48;
+}
